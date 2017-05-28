@@ -1,0 +1,21 @@
+<h2>I am ngClass DIRECTIVE</h2>
+<p>
+We can use the ngclass to load classes dynamically too.
+
+just like the class name, we can load the classes either by string, by an array or even by objects.
+
+The usage of object is the bigger advantage ngClass has over className
+</p>
+<p>[ngClass]="['style1', 'style2']" -- array of classes</p>
+<p>[ngClass]="'style1 style2'" -- string of classes</p>
+
+
+<div [ngClass]="{'style1':isClass1Visible, 'style2':isClass2Visible}">
+object of classes
+</div>
+
+<!--button to togggle style1 -->
+<button (click)="isClass1Visible = !isClass1Visible;">Toggle style 1</button>
+
+<!-- button to toggle style2 -->
+<button (click)="isClass2Visible = !isClass2Visible;">Toggle style 2</button>

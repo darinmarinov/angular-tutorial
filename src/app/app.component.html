@@ -1,0 +1,49 @@
+<div class="app-component">
+
+<h1>
+  {{title}}
+</h1>
+
+<hr>
+
+<app-pasing-data-into-a-component [firstName]="helloName" secondName="Ivanov">
+ <h2>Passing data into a component example</h2>
+</app-pasing-data-into-a-component>
+
+<hr>
+
+<app-responding-to-componen-event [inputCount]="3" (result)="customIncrement">
+ <h2>Responding to component event example</h2>
+</app-responding-to-componen-event>
+
+<hr>
+
+<app-using-two-way-data-binding [count]="1" (countChange)="increment">
+ <h2>Two way data binding example</h2>
+</app-using-two-way-data-binding>
+
+<hr>
+
+<app-access-child-components-from-template #whatever>
+ <h2>Access to child component from the template</h2>
+</app-access-child-components-from-template>
+ 
+ <p>My name is {{whatever.name}}</p>
+
+ <hr>
+
+ <app-projection>
+  <h2> I am Projected content from App component</h2>
+ </app-projection>
+
+ <hr>
+
+ <app-ngstyle-directive>
+   I am Ng Style Text with CUSTOM generate color of border
+ </app-ngstyle-directive>
+
+ <hr>
+
+ <app-ngclass-directive></app-ngclass-directive>
+
+ </div>

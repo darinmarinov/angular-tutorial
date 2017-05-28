@@ -1,0 +1,11 @@
+<p [ngStyle]='paraStyles' >
+ <ng-content></ng-content>
+</p>
+<p [ngStyle]="{ 'font-size': font_size, 'background-color': background_color }"> I would be styled with different colors dynamically </p>
+
+<input type="text" [(ngModel)]="background_color" placeholder="background_color">
+<input type="text" [(ngModel)]="font_size" placeholder="font_size">
+
+<p>In the last code we have 2 new properties which are inputs buttons and with ngModel bindings to the varible declared in the style 
+  for reactivity purposes </p>
+
